@@ -202,8 +202,8 @@ class Trainer(object):
         # inception_score(fake_images)
         # fake_images = fake_images.resize_((1, 3, 218, 178))
         for n in range(num):
-            save_image(fake_images[n], '/home/jingjie/xinzi/dataset/test_celeba/%d.jpg' % n)
-            str0 ='/home/jingjie/xinzi/dataset/test_celeba/' + str(n) + '.jpg'
+            save_image(fake_images[n], '/home/xinzi/dataset_k40/test_celeba/%d.jpg' % n)
+            str0 ='/home/xinzi/dataset_k40/test_celeba/' + str(n) + '.jpg'
             im = Image.open(str0)
             im = im.resize((178, 218))
             im.save(str0)
@@ -227,7 +227,7 @@ class Trainer(object):
         # fid_value = calculate_fid_given_paths(self.path1, self.path2, 1, self.gpu != '', self.dims)
         # print('FID: ', fid_value)
         # a = 0
-        str1 = '/home/jingjie/xinzi/dataset/celebAtemp'
+        str1 = '/home/xinzi/dataset_k40/celebAtemp'
         times = 5
         sum = 0
         for i in range(times):
